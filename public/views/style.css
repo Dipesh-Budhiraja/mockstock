@@ -36,6 +36,7 @@ body {
 .mid-cards {
     width: 250px!important;
     box-shadow: 1px 1px 10px lightgray!important;
+    transition: 0.5s;
 }
 
 .mid-cards:hover {
@@ -58,9 +59,14 @@ body {
     height: 300px;
     margin-left: 10px;
     margin-right: 10px;    
-    box-shadow: 1px 1px 20px lightgray!important;
+    box-shadow: 1px 1px 10px lightgray!important;
     margin-bottom: 50px;
     border-radius: 5px;
+    transition: 0.5s;
+}
+
+.cur-holding:hover {
+    box-shadow: 1px 1px 30px lightgray!important;
 }
 
 .nsit-coin-value {
