@@ -82,3 +82,37 @@ body {
 @font-face {
     font-family: 'Digital-7'; src: url('./digital-7/digital-7 (mono italic).ttf');
 }
+
+/* scrollbar starts */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+/* scrollbar ends */
+
+.market-modal {
+    font-size: 18px!important;
+}
+
+.market-modal-table {
+    font-size: 15px!important;
+}
+
+.model-table-adjustment {
+    width: 100px;
+}
