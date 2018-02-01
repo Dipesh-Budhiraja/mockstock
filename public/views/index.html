@@ -236,7 +236,7 @@
                         <div class="extra content">
                             <a>
                                 <i class="large teal info circle icon"></i>
-                                <span class="more-info-nse">More Info</span>
+                                <span class="more-info-nse">Info</span> | <i class="large teal info circle icon"></i><span class="more-info-nse">Info</span> | <i class="large teal info circle icon"></i><span class="more-info-nse">Info</span>
                             </a>
                         </div>
                     </div>
@@ -350,7 +350,7 @@
                         <div class="extra content">
                             <a>
                                 <i class="large teal info circle icon"></i>
-                                <span class="more-info-nasdaq">More Info</span>
+                                <span class="more-info-nasdaq">Info</span> | <i class="large teal info circle icon"></i><span class="more-info-nasdaq">Info</span> | <i class="large teal info circle icon"></i><span class="more-info-nasdaq">Info</span>
                             </a>
                         </div>
                     </div>
@@ -464,7 +464,7 @@
                         <div class="extra content">
                             <a>
                                 <i class="large teal info circle icon"></i>
-                                <span class="more-info-lse">More Info</span>
+                                <span class="more-info-lse">Info</span> | <i class="large teal info circle icon"></i><span class="more-info-lse">Info</span> | <i class="large teal info circle icon"></i><span class="more-info-lse">Info</span>
                             </a>
                         </div>
                     </div>
@@ -578,7 +578,7 @@
                         <div class="extra content">
                             <a>
                                 <i class="large teal info circle icon"></i>
-                                <span class="more-info-nikkie">More Info</span>
+                                <span class="more-info-nikkie">Info</span> | <i class="large teal info circle icon"></i><span class="more-info-nikkie">Info</span> | <i class="large teal info circle icon"></i><span class="more-info-nikkie">Info</span>
                             </a>
                         </div>
                     </div>
@@ -741,14 +741,14 @@
                                                                             <h4 class="ui image header">
 
                                                                                 <div class="content">
-                                                                                    <div class="sub header">Quantity
+                                                                                    <div class="sub header">Amount
                                                                                     </div>
                                                                                 </div>
                                                                             </h4>
                                                                         </td>
                                                                         <td>
                                                                             <div class="ui input focus">
-                                                                                <input type="text" placeholder="Enter Quantity">
+                                                                                <input type="text" placeholder="Enter Amount" class="amount-input">
                                                                             </div>
                                                                         </td>
                                                                     </tr>
@@ -757,13 +757,13 @@
                                                                             <h4 class="ui image header">
 
                                                                                 <div class="content">
-                                                                                    <div class="sub header">Amount
+                                                                                    <div class="sub header">Quantity
                                                                                     </div>
                                                                                 </div>
                                                                             </h4>
                                                                         </td>
                                                                         <td>
-                                                                            <i class="icon rupee"></i>10290
+                                                                            <span class="change-value"></span>
                                                                         </td>
                                                                     </tr>
                                                                 </tbody>
@@ -1615,6 +1615,7 @@
                 ;
         });
     </script>
+    <script src="./change-value.js"></script>
     <script>
         let myChart = document.getElementById('myChart').getContext('2d');
 
