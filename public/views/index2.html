@@ -1331,282 +1331,95 @@
         <!-- NSIT coin ends -->
         <div class="ui divider" style="margin-top: 60px;"></div>
         <!-- MARKET STARTS HERE -->
-
-        <!-- modals collection starts -->
-        <!-- buy starts -->
         <div class="ui modal tiny buy">
-                <i class="close icon"></i>
-                <div class="header">
-                    Buy Share
-                </div>
-                <div class="image content">
+                                                    <i class="close icon"></i>
+                                                    <div class="header">
+                                                        Buy Share
+                                                    </div>
+                                                    <div class="image content">
 
-                    <div class="description">
-                        <div class="ui header">
-                            <div class="ui breadcrumb market-modal">
-                                <a class="section">National Stock Exchange</a>
-                                <i class="right angle icon divider"></i>
-                                <a class="section " id="companyBuy">Apple Inc.</a>
-                            </div>
-                        </div>
-                        <table class="ui very basic collapsing celled table market-modal-table">
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <h4 class="ui image header">
+                                                        <div class="description">
+                                                            <div class="ui header">
+                                                                <div class="ui breadcrumb market-modal">
+                                                                    <a class="section">National Stock Exchange</a>
+                                                                    <i class="right angle icon divider"></i>
+                                                                    <a class="section" id="companyBuy">Apple Inc.</a>
+                                                                </div>
+                                                            </div>
+                                                            <table class="ui very basic collapsing celled table market-modal-table">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <h4 class="ui image header">
 
-                                            <div class="content">
-                                                <div class="sub header">Current Price
-                                                </div>
-                                            </div>
-                                        </h4>
-                                    </td>
-                                    <td class="model-table-adjustment">
-                                        <i class="icon rupee"></i><span class="curPriceBuy" id="placePriceBuy" > 13920</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <h4 class="ui image header">
+                                                                                <div class="content">
+                                                                                    <div class="sub header">Current Price
+                                                                                    </div>
+                                                                                </div>
+                                                                            </h4>
+                                                                        </td>
+                                                                        <td class="model-table-adjustment">
+                                                                            <i class="icon rupee"></i><span class="curPrice" id = "companyPrice">13920</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <h4 class="ui image header">
 
-                                            <div class="content">
-                                                <div class="sub header">Last Traded Volume
-                                                </div>
-                                            </div>
-                                        </h4>
-                                    </td>
-                                    <td>
-                                        <span id="LVBuy"> 10290</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <h4 class="ui image header">
+                                                                                <div class="content">
+                                                                                    <div class="sub header">Last Traded Volume
+                                                                                    </div>
+                                                                                </div>
+                                                                            </h4>
+                                                                        </td>
+                                                                        <td> <span class="curPrice" id = "companyLV">
+                                                                            10290 </span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <h4 class="ui image header">
 
-                                            <div class="content">
-                                                <div class="sub header">Amount
-                                                </div>
-                                            </div>
-                                        </h4>
-                                    </td>
-                                    <td>
-                                        <div class="ui input focus">
-                                            <i class="icon rupee" style="position:relative; margin-top: 10px;"></i>
-                                            <input type="text" placeholder="Enter Amount" class="amount-input-buy">
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <h4 class="ui image header">
+                                                                                <div class="content">
+                                                                                    <div class="sub header">Amount
+                                                                                    </div>
+                                                                                </div>
+                                                                            </h4>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="ui input focus">
+                                                                                <i class="icon rupee" style="position:relative; margin-top: 10px;"></i>
+                                                                                <input type="text" placeholder="Enter Amount" class="amount-input">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <h4 class="ui image header">
 
-                                            <div class="content">
-                                                <div class="sub header">Quantity
-                                                </div>
-                                            </div>
-                                        </h4>
-                                    </td>
-                                    <td>
-                                        <span class="change-value-buy"></span>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <input value = "" id = "buyFormIdBuy">
-                <div class="actions">
-                    <div class="ui buttons">
-                        <button class="ui button deny red">Cancel</button>
-                        <div class="or"></div>
-                        <button class="ui positive button">Buy</button>
-                    </div>
-                </div>
-            </div>
-            <!-- buy ends -->
-
-            <!-- sell -->
-             <div class="ui modal tiny sell">
-                    <i class="close icon"></i>
-                    <div class="header">
-                        Sell Share
-                    </div>
-                    <div class="image content">
-
-                        <div class="description">
-                            <div class="ui header">
-                                <div class="ui breadcrumb market-modal">
-                                    <a class="section">National Stock Exchange</a>
-                                    <i class="right angle icon divider"></i>
-                                    <a class="section" id="companySell">Apple Inc.</a>
-                                </div>
-                            </div>
-                            <table class="ui very basic collapsing celled table market-modal-table">
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <h4 class="ui image header">
-
-                                                <div class="content">
-                                                    <div class="sub header">Current Price
+                                                                                <div class="content">
+                                                                                    <div class="sub header">Quantity
+                                                                                    </div>
+                                                                                </div>
+                                                                            </h4>
+                                                                        </td>
+                                                                        <td>
+                                                                            <span class="change-value"></span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div> <input value = "" id = "buyFormId">
+                                                    <div class="actions">
+                                                        <div class="ui buttons">
+                                                            <button class="ui button deny red">Cancel</button>
+                                                            <div class="or"></div>
+                                                            
+                                                            <button class="ui positive button">Buy</button>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </h4>
-                                        </td>
-                                        <td class="model-table-adjustment">
-                                            <i class="icon rupee"></i><span class="curPriceSell " id="placePriceSell" ></span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <h4 class="ui image header">
-
-                                                <div class="content">
-                                                    <div class="sub header">Last Traded Volume
-                                                    </div>
-                                                </div>
-                                            </h4>
-                                        </td>
-                                        <td>
-                                            <span id="LVSell"></span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <h4 class="ui image header">
-
-                                                <div class="content">
-                                                    <div class="sub header">Quantity
-                                                    </div>
-                                                </div>
-                                            </h4>
-                                        </td>
-                                        <td>
-                                            <div class="ui input focus">
-                                                <input type="text" placeholder="Enter Quantity" class="amount-input-sell">
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <h4 class="ui image header">
-
-                                                <div class="content">
-                                                    <div class="sub header">Amount
-                                                    </div>
-                                                </div>
-                                            </h4>
-                                        </td>
-                                        <td>
-                                            <span class="change-value-sell"></span>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <input value = "" id = "buyFormIdSell">
-                    <div class="actions">
-                        <div class="ui buttons">
-                            <button class="ui button deny red">Cancel</button>
-                            <div class="or"></div>
-                            <button class="ui positive button">Sell</button>
-                        </div>
-                    </div>
-                </div> 
-                <!-- sell ends -->
-                
-                <!-- short -->
-             <div class="ui modal tiny short">
-                    <i class="close icon"></i>
-                    <div class="header">
-                        Sell Share
-                    </div>
-                    <div class="image content">
-
-                        <div class="description">
-                            <div class="ui header">
-                                <div class="ui breadcrumb market-modal">
-                                    <a class="section">National Stock Exchange</a>
-                                    <i class="right angle icon divider"></i>
-                                    <a class="section" id="companyShort">Apple Inc.</a>
-                                </div>
-                            </div>
-                            <table class="ui very basic collapsing celled table market-modal-table">
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <h4 class="ui image header">
-
-                                                <div class="content">
-                                                    <div class="sub header">Current Price
-                                                    </div>
-                                                </div>
-                                            </h4>
-                                        </td>
-                                        <td class="model-table-adjustment">
-                                            <i class="icon rupee"></i><span class="curPriceShort " id="placePriceShort" ></span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <h4 class="ui image header">
-
-                                                <div class="content">
-                                                    <div class="sub header">Last Traded Volume
-                                                    </div>
-                                                </div>
-                                            </h4>
-                                        </td>
-                                        <td>
-                                            <span id="LVShort"></span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <h4 class="ui image header">
-
-                                                <div class="content">
-                                                    <div class="sub header">Quantity
-                                                    </div>
-                                                </div>
-                                            </h4>
-                                        </td>
-                                        <td>
-                                            <div class="ui input focus">
-                                                <input type="text" placeholder="Enter Quantity" class="amount-input-short">
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <h4 class="ui image header">
-
-                                                <div class="content">
-                                                    <div class="sub header">Amount
-                                                    </div>
-                                                </div>
-                                            </h4>
-                                        </td>
-                                        <td>
-                                            <span class="change-value-short"></span>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <input value = "" id = "buyFormIdShort">
-                    <div class="actions">
-                        <div class="ui buttons">
-                            <button class="ui button deny red">Cancel</button>
-                            <div class="or"></div>
-                            <button class="ui positive button">Sell</button>
-                        </div>
-                    </div>
-                </div> 
-                <!-- short ends -->
-        <!-- modals collection ends -->
 
         <div class="ui four grid centered center" id="market" style="margin-top: 30px; margin-left: 250px; margin-bottom: 60px;">
             <h1 style="font-family: 'Raleway', sans-serif !important; font-size: 35px; font-weight: 100; letter-spacing: 0.5em;">MARKET</h1>
@@ -1637,17 +1450,190 @@
                                         <td>400</td>
                                         <td>20
                                             <span>
-                                                <input type="" value="hello" class="hiddenInput"> 
-                                                <input type="" value="400" class="hiddenInput"> 
-                                                <input type="" value="20" class="hiddenInput"> 
+                                                <input type="" value="hello" class="hiddenInput">
+                                                <input value = "400" class = "hiddenInput">
+                                                <input value = "79" class = "hiddenInput">
                                                 <input value = "9" class = "hiddenInput">
                                             </span>
-
                                             <span style="float: right;">
                                                 <button class="ui inverted green button buy-btn">BUY</button>
                                                 <button class="ui inverted red button sell-btn">SELL</button>
                                                 <button class="ui inverted orange button short-btn">SHORT</button>
-                        
+                                                
+                                                <div class="ui modal tiny sell">
+                                                    <i class="close icon"></i>
+                                                    <div class="header">
+                                                        Sell Share
+                                                    </div>
+                                                    <div class="image content">
+
+                                                        <div class="description">
+                                                            <div class="ui header">
+                                                                <div class="ui breadcrumb market-modal">
+                                                                    <a class="section">National Stock Exchange</a>
+                                                                    <i class="right angle icon divider"></i>
+                                                                    <a class="section">Apple Inc.</a>
+                                                                </div>
+                                                            </div>
+                                                            <table class="ui very basic collapsing celled table market-modal-table">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <h4 class="ui image header">
+
+                                                                                <div class="content">
+                                                                                    <div class="sub header">Current Price
+                                                                                    </div>
+                                                                                </div>
+                                                                            </h4>
+                                                                        </td>
+                                                                        <td class="model-table-adjustment">
+                                                                            <i class="icon rupee"></i>101010
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <h4 class="ui image header">
+
+                                                                                <div class="content">
+                                                                                    <div class="sub header">Last Traded Volume
+                                                                                    </div>
+                                                                                </div>
+                                                                            </h4>
+                                                                        </td>
+                                                                        <td>
+                                                                            101010
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <h4 class="ui image header">
+
+                                                                                <div class="content">
+                                                                                    <div class="sub header">Quantity
+                                                                                    </div>
+                                                                                </div>
+                                                                            </h4>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="ui input focus">
+                                                                                <input type="text" placeholder="Enter Quantity">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <h4 class="ui image header">
+
+                                                                                <div class="content">
+                                                                                    <div class="sub header">Amount
+                                                                                    </div>
+                                                                                </div>
+                                                                            </h4>
+                                                                        </td>
+                                                                        <td>
+                                                                            <i class="icon rupee"></i>101010
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <div class="actions">
+                                                        <div class="ui buttons">
+                                                            <button class="ui button deny red">Cancel</button>
+                                                            <div class="or"></div>
+                                                            <button class="ui positive button">Sell</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="ui modal tiny short">
+                                                    <i class="close icon"></i>
+                                                    <div class="header">
+                                                        Short Share
+                                                    </div>
+                                                    <div class="image content">
+
+                                                        <div class="description">
+                                                            <div class="ui header">
+                                                                <div class="ui breadcrumb market-modal">
+                                                                    <a class="section">National Stock Exchange</a>
+                                                                    <i class="right angle icon divider"></i>
+                                                                    <a class="section">Apple Inc.</a>
+                                                                </div>
+                                                            </div>
+                                                            <table class="ui very basic collapsing celled table market-modal-table">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <h4 class="ui image header">
+
+                                                                                <div class="content">
+                                                                                    <div class="sub header">Current Price
+                                                                                    </div>
+                                                                                </div>
+                                                                            </h4>
+                                                                        </td>
+                                                                        <td class="model-table-adjustment">
+                                                                            <i class="icon rupee"></i>101010
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <h4 class="ui image header">
+
+                                                                                <div class="content">
+                                                                                    <div class="sub header">Last Traded Volume
+                                                                                    </div>
+                                                                                </div>
+                                                                            </h4>
+                                                                        </td>
+                                                                        <td>
+                                                                            101010
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <h4 class="ui image header">
+
+                                                                                <div class="content">
+                                                                                    <div class="sub header">Quantity
+                                                                                    </div>
+                                                                                </div>
+                                                                            </h4>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="ui input focus">
+                                                                                <input type="text" placeholder="Enter Quantity">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <h4 class="ui image header">
+
+                                                                                <div class="content">
+                                                                                    <div class="sub header">Amount
+                                                                                    </div>
+                                                                                </div>
+                                                                            </h4>
+                                                                        </td>
+                                                                        <td>
+                                                                            <i class="icon rupee"></i>101010
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <div class="actions">
+                                                        <div class="ui buttons">
+                                                            <button class="ui button deny red">Cancel</button>
+                                                            <div class="or"></div>
+                                                            <button class="ui positive button">Short</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </span>
                                         </td>
                                     </tr>
@@ -1657,11 +1643,8 @@
                                         <td>900</td>
                                         <td>30
                                                 <span>
-                                                    <input type="" value="bye" class="hiddenInput"> 
-                                                    <input type="" value="800" class="hiddenInput"> 
-                                                    <input type="" value="40" class="hiddenInput"> 
-                                                    <input type="" value="18" class="hiddenInput">
-                                                </span>
+                                                        <input type="" value="bye" class="hiddenInput"> 
+                                                    </span>
                                             <span style="float: right;">
                                                 <button class="ui inverted green button buy-btn">BUY</button>
                                                 <button class="ui inverted red button sell-btn">SELL</button>
@@ -1851,194 +1834,6 @@
         <div class="ui divider" style="margin-top: 60px;"></div>
 
         <!-- NSIT coin value starts here -->
-
-        <!-- modal collections for nsit coin -->
-        <!-- buy modal starts -->
-        <div class="ui modal tiny nsit-buy">
-                <i class="close icon"></i>
-                <div class="header">
-                    Buy NSIT Coin
-                </div>
-                <div class="image content">
-
-                    <div class="description">
-                        <table class="ui very basic collapsing celled table market-modal-table">
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <h4 class="ui image header">
-
-                                            <div class="content">
-                                                <div class="sub header">Currency
-                                                </div>
-                                            </div>
-                                        </h4>
-                                    </td>
-                                    <td>
-                                        <div class="two fields">
-                                            <div class="field">
-                                                <select class="ui fluid dropdown">
-                                                    <option class="opt" value="">Rupee</option>
-                                                    <option class="opt" value="AL">Rupee</option>
-                                                    <option class="opt" value="AK">Dollar</option>
-                                                    <option class="opt" value="AZ">Pound</option>
-                                                    <option class="opt" value="AR">Yen</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <h4 class="ui image header">
-
-                                            <div class="content">
-                                                <div class="sub header">Current Price
-                                                </div>
-                                            </div>
-                                        </h4>
-                                    </td>
-                                    <td class="model-table-adjustment">
-                                        <i class="icon rupee icon-12"></i><span class="curPriceCoinBuy">0</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <h4 class="ui image header">
-
-                                            <div class="content">
-                                                <div class="sub header">Amount
-                                                </div>
-                                            </div>
-                                        </h4>
-                                    </td>
-                                    <td>
-                                        <div class="ui input focus">
-                                            <input type="text" placeholder="Enter Amount" class="amount-input-coin-buy">
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <h4 class="ui image header">
-
-                                            <div class="content">
-                                                <div class="sub header">Quantity
-                                                </div>
-                                            </div>
-                                        </h4>
-                                    </td>
-                                    <td>
-                                        <span class="change-value-coin-buy">0</span>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="actions">
-                    <div class="ui buttons">
-                        <button class="ui button deny red">Cancel</button>
-                        <div class="or"></div>
-                        <button class="ui positive button">Buy</button>
-                    </div>
-                </div>
-            </div>
-        <!-- buy modal ends -->
-        <!-- buy modal starts -->
-        <div class="ui modal tiny nsit-sell">
-                <i class="close icon"></i>
-                <div class="header">
-                    Buy NSIT Coin
-                </div>
-                <div class="image content">
-
-                    <div class="description">
-                        <table class="ui very basic collapsing celled table market-modal-table">
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <h4 class="ui image header">
-
-                                            <div class="content">
-                                                <div class="sub header">Currency
-                                                </div>
-                                            </div>
-                                        </h4>
-                                    </td>
-                                    <td>
-                                        <div class="two fields">
-                                            <div class="field">
-                                                <select class="ui fluid dropdown">
-                                                    <option class="opt" value="">Rupee</option>
-                                                    <option class="opt" value="AL">Rupee</option>
-                                                    <option class="opt" value="AK">Dollar</option>
-                                                    <option class="opt" value="AZ">Pound</option>
-                                                    <option class="opt" value="AR">Yen</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <h4 class="ui image header">
-
-                                            <div class="content">
-                                                <div class="sub header">Current Price
-                                                </div>
-                                            </div>
-                                        </h4>
-                                    </td>
-                                    <td class="model-table-adjustment">
-                                        <i class="icon rupee icon-13"></i><span class="curPriceCoinSell">0</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <h4 class="ui image header">
-
-                                            <div class="content">
-                                                <div class="sub header">Amount
-                                                </div>
-                                            </div>
-                                        </h4>
-                                    </td>
-                                    <td>
-                                        <div class="ui input focus">
-                                            <input type="text" placeholder="Enter Amount" class="amount-input-coin-sell">
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <h4 class="ui image header">
-
-                                            <div class="content">
-                                                <div class="sub header">Quantity
-                                                </div>
-                                            </div>
-                                        </h4>
-                                    </td>
-                                    <td>
-                                        <span class="change-value-coin-sell">0</span>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="actions">
-                    <div class="ui buttons">
-                        <button class="ui button deny red">Cancel</button>
-                        <div class="or"></div>
-                        <button class="ui positive button">Sell</button>
-                    </div>
-                </div>
-            </div>
-        <!-- buy modal ends -->
-        <!-- modal collection for nsit coin ends here -->
-
         <div class="ui two grid centered center" id="nsit-coin" style="margin-top: 30px; margin-left: 230px; margin-bottom: 60px;">
             <h1 style="font-family: 'Raleway', sans-serif !important; font-size: 35px; font-weight: 100; letter-spacing: 0.5em;">NSIT COIN</h1>
 
@@ -2063,7 +1858,7 @@
                                     </h4>
                                 </td>
                                 <td>
-                                    <span id="rupee-coin">63.83</span>
+                                    63.83
                                 </td>
                             </tr>
                             <tr>
@@ -2077,7 +1872,7 @@
                                     </h4>
                                 </td>
                                 <td>
-                                        <span id="dollar-coin">1</span>
+                                    1
                                 </td>
                             </tr>
                             <tr>
@@ -2091,7 +1886,7 @@
                                     </h4>
                                 </td>
                                 <td>
-                                        <span id="pound-coin">0.72</span>
+                                    0.72
                                 </td>
                             </tr>
                             <tr>
@@ -2105,7 +1900,7 @@
                                     </h4>
                                 </td>
                                 <td>
-                                        <span id="yen-coin">110.78</span>
+                                    110.78
                                 </td>
                             </tr>
                         </tbody>
@@ -2122,8 +1917,97 @@
                         <div class="or"></div>
                         <button class="ui negative button nsit-sell-button">Sell</button>
                     </div>
-                    
-                    <!-- <div class="ui modal tiny nsit-sell">
+                    <div class="ui modal tiny nsit-buy">
+                        <i class="close icon"></i>
+                        <div class="header">
+                            Buy NSIT Coin
+                        </div>
+                        <div class="image content">
+
+                            <div class="description">
+                                <table class="ui very basic collapsing celled table market-modal-table">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <h4 class="ui image header">
+
+                                                    <div class="content">
+                                                        <div class="sub header">Currency
+                                                        </div>
+                                                    </div>
+                                                </h4>
+                                            </td>
+                                            <td>
+                                                <div class="two fields">
+                                                    <div class="field">
+                                                        <select class="ui fluid dropdown">
+                                                            <option class="opt" value="">Rupee</option>
+                                                            <option class="opt" value="AL">Rupee</option>
+                                                            <option class="opt" value="AK">Dollar</option>
+                                                            <option class="opt" value="AZ">Pound</option>
+                                                            <option class="opt" value="AR">Yen</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h4 class="ui image header">
+
+                                                    <div class="content">
+                                                        <div class="sub header">Current Price
+                                                        </div>
+                                                    </div>
+                                                </h4>
+                                            </td>
+                                            <td class="model-table-adjustment">
+                                                <i class="icon rupee icon-12"></i>101010
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h4 class="ui image header">
+
+                                                    <div class="content">
+                                                        <div class="sub header">Amount
+                                                        </div>
+                                                    </div>
+                                                </h4>
+                                            </td>
+                                            <td>
+                                                <div class="ui input focus">
+                                                    <input type="text" placeholder="Enter Amount">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h4 class="ui image header">
+
+                                                    <div class="content">
+                                                        <div class="sub header">Quantity
+                                                        </div>
+                                                    </div>
+                                                </h4>
+                                            </td>
+                                            <td>
+                                                <i class="icon rupee icon-12"></i>101010
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <div class="ui buttons">
+                                <button class="ui button deny red">Cancel</button>
+                                <div class="or"></div>
+                                <button class="ui positive button">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui modal tiny nsit-sell">
                         <i class="close icon"></i>
                         <div class="header">
                             Sell NSIT Coin
@@ -2211,7 +2095,7 @@
                                 <button class="ui positive button">Sell</button>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -2488,11 +2372,11 @@
                 ;
         });
 
-        // $(".nsit-buy-button").on('click', function () {
-        //     $('.ui.modal.tiny.nsit-buy')
-        //         .modal('show')
-        //         ;
-        // });
+        $(".nsit-buy-button").on('click', function () {
+            $('.ui.modal.tiny.nsit-buy')
+                .modal('show')
+                ;
+        });
 
         $(".nsit-sell-button").on('click', function () {
             $('.ui.modal.tiny.nsit-sell')
@@ -2500,9 +2384,8 @@
                 ;
         });
     </script>
-    <script src="./market.js"></script>
     <script src="./change-value.js"></script>
-    
+    <script src="./market.js"></script>
     <script>
         let myChart = document.getElementById('myChart').getContext('2d');
 

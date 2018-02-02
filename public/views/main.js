@@ -15,17 +15,17 @@ a = $(".nsit-buy .field select");
             $(".icon-12").addClass("rupee");
             
             var rupee = $("#rupee-coin")[0].textContent;
-            $('.curPriceCoin')[0].textContent = rupee;
+            $('.curPriceCoinBuy')[0].textContent = rupee;
 
-            var curPrice = $(".curPriceCoin")[0].textContent;
+            var curPrice = $(".curPriceCoinBuy")[0].textContent;
             console.log(curPrice);
-            $(".amount-input-coin").keydown(function (event) {
+            $(".amount-input-coin-buy").keydown(function (event) {
                 setTimeout(() => {
                     var amount = event.currentTarget.value;
                     // console.log(amount);
                     var quantity = amount / curPrice;
                     console.log(quantity);
-                    $(".change-value-coin")[0].textContent = quantity;
+                    $(".change-value-coin-buy")[0].textContent = quantity;
                 }, 0002);
             });
         }
@@ -37,17 +37,17 @@ a = $(".nsit-buy .field select");
             $(".icon-12").addClass("dollar");  
             
             var dollar = $("#dollar-coin")[0].textContent;
-            $('.curPriceCoin')[0].textContent = dollar; 
+            $('.curPriceCoinBuy')[0].textContent = dollar; 
 
-            var curPrice = $(".curPriceCoin")[0].textContent;
+            var curPrice = $(".curPriceCoinBuy")[0].textContent;
             console.log(curPrice);
-            $(".amount-input-coin").keydown(function (event) {
+            $(".amount-input-coin-buy").keydown(function (event) {
                 setTimeout(() => {
                     var amount = event.currentTarget.value;
                     // console.log(amount);
                     var quantity = amount / curPrice;
                     console.log(quantity);
-                    $(".change-value-coin")[0].textContent = quantity;
+                    $(".change-value-coin-buy")[0].textContent = quantity;
                 }, 0002);
             });         
         }
@@ -59,17 +59,17 @@ a = $(".nsit-buy .field select");
             $(".icon-12").addClass("pound");  
             
             var pound = $("#pound-coin")[0].textContent;
-            $('.curPriceCoin')[0].textContent = pound;
+            $('.curPriceCoinBuy')[0].textContent = pound;
 
-            var curPrice = $(".curPriceCoin")[0].textContent;
+            var curPrice = $(".curPriceCoinBuy")[0].textContent;
             console.log(curPrice);
-            $(".amount-input-coin").keydown(function (event) {
+            $(".amount-input-coin-buy").keydown(function (event) {
                 setTimeout(() => {
                     var amount = event.currentTarget.value;
                     // console.log(amount);
                     var quantity = amount / curPrice;
                     console.log(quantity);
-                    $(".change-value-coin")[0].textContent = quantity;
+                    $(".change-value-coin-buy")[0].textContent = quantity;
                 }, 0002);
             });        
         }
@@ -81,17 +81,17 @@ a = $(".nsit-buy .field select");
             $(".icon-12").addClass("yen"); 
             
             var yen = $("#yen-coin")[0].textContent;
-            $('.curPriceCoin')[0].textContent = yen;
+            $('.curPriceCoinBuy')[0].textContent = yen;
 
-            var curPrice = $(".curPriceCoin")[0].textContent;
+            var curPrice = $(".curPriceCoinBuy")[0].textContent;
             console.log(curPrice);
-            $(".amount-input-coin").keydown(function (event) {
+            $(".amount-input-coin-buy").keydown(function (event) {
                 setTimeout(() => {
                     var amount = event.currentTarget.value;
                     // console.log(amount);
                     var quantity = amount / curPrice;
                     console.log(quantity);
-                    $(".change-value-coin")[0].textContent = quantity;
+                    $(".change-value-coin-buy")[0].textContent = quantity;
                 }, 0002);
             });          
         }
@@ -119,27 +119,87 @@ b = $(".nsit-sell .field select");
             $('.icon-13').removeClass('yen');
             $('.icon-13').removeClass('rupee');
             $(".icon-13").addClass("rupee");
+
+            var rupee = $("#rupee-coin")[0].textContent;
+            $('.curPriceCoinSell')[0].textContent = rupee;
+
+            var curPrice = $(".curPriceCoinSell")[0].textContent;
+            console.log(curPrice);
+            $(".amount-input-coin-sell").keydown(function (event) {
+                setTimeout(() => {
+                    var amount = event.currentTarget.value;
+                    // console.log(amount);
+                    var quantity = amount / curPrice;
+                    console.log(quantity);
+                    $(".change-value-coin-sell")[0].textContent = quantity;
+                }, 0002);
+            });
         }
         else if (v=="AK"){
             $('.icon-13').removeClass('dollar');
             $('.icon-13').removeClass('pound');
             $('.icon-13').removeClass('yen');
             $('.icon-13').removeClass('rupee');
-            $(".icon-13").addClass("dollar");            
+            $(".icon-13").addClass("dollar"); 
+            
+            var dollar = $("#dollar-coin")[0].textContent;
+            $('.curPriceCoinSell')[0].textContent = dollar;
+
+            var curPrice = $(".curPriceCoinSell")[0].textContent;
+            console.log(curPrice);
+            $(".amount-input-coin-sell").keydown(function (event) {
+                setTimeout(() => {
+                    var amount = event.currentTarget.value;
+                    // console.log(amount);
+                    var quantity = amount / curPrice;
+                    console.log(quantity);
+                    $(".change-value-coin-sell")[0].textContent = quantity;
+                }, 0002);
+            });
         }
         else if (v=="AZ"){
             $('.icon-13').removeClass('dollar');
             $('.icon-13').removeClass('pound');
             $('.icon-13').removeClass('yen');
             $('.icon-13').removeClass('rupee');
-            $(".icon-13").addClass("pound");            
+            $(".icon-13").addClass("pound");    
+            
+            var pound = $("#pound-coin")[0].textContent;
+            $('.curPriceCoinSell')[0].textContent = pound;
+
+            var curPrice = $(".curPriceCoinSell")[0].textContent;
+            console.log(curPrice);
+            $(".amount-input-coin-sell").keydown(function (event) {
+                setTimeout(() => {
+                    var amount = event.currentTarget.value;
+                    // console.log(amount);
+                    var quantity = amount / curPrice;
+                    console.log(quantity);
+                    $(".change-value-coin-sell")[0].textContent = quantity;
+                }, 0002);
+            });
         }
         else if (v=="AR"){
             $('.icon-13').removeClass('dollar');
             $('.icon-13').removeClass('pound');
             $('.icon-13').removeClass('yen');
             $('.icon-13').removeClass('rupee');
-            $(".icon-13").addClass("yen");            
+            $(".icon-13").addClass("yen");       
+            
+            var yen = $("#yen-coin")[0].textContent;
+            $('.curPriceCoinSell')[0].textContent = yen;
+
+            var curPrice = $(".curPriceCoinSell")[0].textContent;
+            console.log(curPrice);
+            $(".amount-input-coin-sell").keydown(function (event) {
+                setTimeout(() => {
+                    var amount = event.currentTarget.value;
+                    // console.log(amount);
+                    var quantity = amount / curPrice;
+                    console.log(quantity);
+                    $(".change-value-coin-sell")[0].textContent = quantity;
+                }, 0002);
+            });
         }
         
     }
